@@ -1,0 +1,396 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* /////////////////////////////////////////menu\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.header-section {
+    background: #00000082;
+    padding: 10px 0;
+}
+
+.main-manu ul li {
+    position: relative;
+    line-height: 65px;
+}
+
+.menu :hover{
+    color: #c69453;
+    display: inline-block;
+}
+
+.main-manu ul li:first-child a{
+    color: #c69453;
+}
+
+
+
+.main-manu ul li::after {
+    content: " ";
+    width: 90%;
+    height: 2px;
+    background: orange;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    margin: auto;
+    transform: scaleX(0);
+    transition: .4s;
+}
+.main-manu ul li:hover::after{
+    transform: scaleX(1);
+}
+    
+  
+
+
+.logo1::after {
+    content: "\f078";
+    font: var(--fa-font-solid);
+    margin-left: 5px;
+}
+
+.main-manu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.main-manu ul li{
+    display: inline-block;
+    
+}
+.main-manu ul ul li{
+    margin-left: 0;
+}
+
+.main-manu ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: #fefcfe;
+    margin-left: 30px;
+    
+}
+
+/*drop dawn menu*/
+.main-manu ul li{
+    position: relative;
+}
+.main-manu ul li ul {
+    position: absolute;
+    width: 200px;
+    left: 0;
+    top: 139%;
+    background:rgba(0, 0, 0, 0.951) ;
+    transition: .4s;
+}
+.main-manu ul li ul :hover {
+    background-color: #fefcfe;
+}
+.main-manu ul li ul li {
+    display: block;        
+    width: 100%;
+    border-bottom: 1px solid #fff;
+   
+}
+.main-manu ul li ul li:hover a {
+    color: #c69453;
+}
+
+.main-manu ul li ul li a{
+ display: block; 
+ text-align: left;
+ text-decoration: none;
+
+
+}
+
+.main-manu ul li ul{
+    opacity: 0;
+    visibility: hidden;
+    transform: scaley(0);
+    transform-origin: top center;
+   
+}
+.main-manu ul li:hover ul{
+    transform: scaley(1);
+    opacity: 1;
+    visibility: visible;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /////////////////////////////////////////menu-end\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+
+
+.header-section img {
+    height: 60px;
+    width: auto;
+    margin: 10px 0px 10px 0px;
+}
+/* /////////////////banner-section\\\\\\\\\\\\\\ */
+
+
+.bg{
+    
+    background: url(./b.jpg)rgba(0, 0, 0, 0.715);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply ;
+    background-position: bottom center;
+ 
+    
+}
+.banner-section {
+    padding: 200px 0;
+}
+
+
+.banner-content h1 {
+    color: white;
+    font-size: 80px;
+    padding: 0px 0px 20px 0px;
+}
+.banner-content h2 {
+    color: white;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.banner-content h2::before {
+    content: "";
+    width: 6%;
+    height: 2px;
+    background: aliceblue;
+    position: absolute;
+    top: 23px;
+    left: 66%;
+}
+
+.banner-content h2::after {
+    content: "";
+    width: 6%;
+    height: 2px;
+    background: aliceblue;
+    position: absolute;
+    top: 23px;
+    left: 27%;
+}
+
+.banner-content a {
+    padding: 15px 35px;
+    color: white;
+    background: orange;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.banner-content a:hover{
+    color: orange;
+    background-color: white;
+    transition: .7s;
+}
+
+/* //////////////////////service-section\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.service-section{
+    max-width: 100%;
+    background-color: #f8f8f8;
+    padding: 60px 0px;
+}
+
+.card {
+    box-sizing: border-box;
+    width: 23%;
+    margin: 1%;
+    padding: 35px 25px 80px 25px;
+    border-radius: 0;
+    border: none;
+    position: relative;
+}
+
+.card:hover{
+    background-color: #e9e6e5;
+}
+.card:hover img{
+    transform: rotateY(360deg);
+    transition: .8s;
+}
+
+.card img {
+    width: 35%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.card h5 {
+   
+    padding-top: 17px;
+    color: #2e4050;
+    font-size: 20px;
+}
+.card p {
+    padding: 20px 0;
+    color: #939393;
+    line-height: 26px;
+}
+
+.card-btnn a {
+    padding: 10px 25px;
+    color: white;
+    background: #c69453;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .5s;
+    position: absolute;
+    left: 30%;
+    top: 80%;
+}
+.card:hover .card-btnn a {
+    background: #fff;
+    color: #c8934f;
+}
+
+.card-btnn a:hover {
+    background: #5e5d5d !important;
+    color: #fff !important;
+    margin-top: 5px;
+}
+
+/* /////////////////////////About-section\\\\\\\\\\\\\\\\\ */
+
+iframe{
+    padding-top: 100px;
+}
+
+.about-section {
+    background: rgb(248, 248, 248);
+    padding-bottom: 90px;
+}
+.about-section h1 {
+    color: black;
+    padding-top: 100px;
+    margin-bottom: 30px;
+}
+.about-section span{
+    color: #c69453;
+}
+.about-section p {
+    color: #989584;
+    margin-bottom: 30px;
+    width: auto;
+    height: 80px;
+}
+
+.about-btnn a:hover{
+    color: rgb(255, 255, 255);
+    background-color: orange;
+    transition: .7s;
+}
+
+.about-btnn a{
+    padding: 12px 25px;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    display: inline-block;
+    text-decoration: none;
+    transition: .5s;
+    margin-top: 20px;
+}
+
+/* /////////////////////Contact-section\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.contact-section {
+    background-image: url(./Contact-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 220px 0px;
+    background-position: center right;
+}
+
+
+
+.contact {
+    width: 100%;
+    padding: 15px 15px;
+    margin-left: 35px;
+    border: none;
+    box-shadow: 0 0 10px #0000001f;
+}
+
+.content-area{
+    width: 45%;
+}
+
+.content-area h1 {
+    margin-left: 35px;
+    font-weight: 700;
+}
+.content-area p{
+    margin-left: 35px;
+    padding: 20px 0px;
+}
+
+.sub {
+    padding: 12px 25px;
+    color: rgb(255, 255, 255);
+    background: #c69453;
+    display: inline-block;
+    transition: .5s;
+    margin-top: 20px;
+    border: none;
+    margin-left: 35px;
+}
+
+/* ///////////////////footer-section\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+.footer-section {
+    background: rgb(109, 109, 109);
+    padding: 30px 0px;
+}
+    .footer-section h1 {
+        font-size: 20px;
+        color: #f8f8f8c3;
+        margin-top: 20px;
+    }
+
+    .footer-section ul li{
+        display: inline-block;
+    }
+
+    .footer-section a{
+        text-decoration: none;
+
+    }
+
+    .fa-brands, .fab {
+        font-weight: 400;
+        font-size: 18px;
+        margin-left: 10px;
+        color: antiquewhite;
+        margin-top: 20px;
+    }
+      
+      
